@@ -1,0 +1,27 @@
+name: testBot
+
+entryPoint:
+  - main.sc
+
+botEngine: v2
+language: ru
+
+sts:
+    noMatchThreshold: 0.2
+    
+tests:
+    exclude:
+        - test.xml
+
+injector:
+  botName: Валерия
+  weatherApiKey: bd519a9c3358475836a98ca4664d3000
+
+
+  smtp:
+    host: smtp.simplenet.ru                  # хост SMTP-сервера
+    port: 25                              # порт SMTP-сервера
+    from: simple@net.ru          # отправитель
+    user: simple@net.ru                 # пользователь SMTP-сервера
+    password: Parol                   # пароль SMTP-сервера
+    

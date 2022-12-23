@@ -1,0 +1,70 @@
+{
+  "project" : {
+    "id" : "sert2-249634540-LJi",
+    "name" : "sert2-249634540-LJi",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "UTC",
+    "extendedSettings" : {
+      "useShared" : false
+    },
+    "shared" : false
+  },
+  "intents" : [ {
+    "path" : "/BuyTicket",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "купить билет"
+    }, {
+      "text" : "хочу купить билет"
+    } ],
+    "patterns" : [ "~билет" ]
+  }, {
+    "path" : "/Weather",
+    "enabled" : false,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Погода"
+    }, {
+      "text" : "погоду"
+    }, {
+      "text" : "хочу узнать погоду"
+    }, {
+      "text" : "что с погодой"
+    }, {
+      "text" : "как там с погодой?"
+    }, {
+      "text" : "че там с погодой?"
+    } ],
+    "patterns" : [ ],
+    "slots" : [ {
+      "name" : "towns",
+      "entity" : "pymorphy.geox",
+      "required" : true,
+      "prompts" : [ "В каком городе?" ],
+      "array" : false
+    } ]
+  }, {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ]
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ]
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url", "pymorphy.geox", "duckling.date", "mystem.geo" ],
+  "spellerDictionary" : [ ]
+}
